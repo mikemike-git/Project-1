@@ -1,0 +1,12 @@
+$primary-color: #272727;
+$secondary-color: #3d3d3d;
+$accent-color-one: #fff;
+$accent-color-two: #2222;
+$font-weights("light": 600, "med": 700, "bold": 900);
+@mixin centerAlign{
+    display:block;
+    margin:0 auto;
+}
+@function font-weights($weight){
+   @return map-get($font-weights, $weight);
+}
